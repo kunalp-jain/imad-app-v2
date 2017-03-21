@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Jainism</title>
+            <link href="ui/bootstrap.min.css" rel="stylesheet">
+            <link href="ui/clean-blog.min.css" rel="stylesheet">
+            <link href="ui/font-awesome.min.css" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+            <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+            <link href="ui/modal.css" rel="stylesheet">
+        </head>
+<body>
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars"></i>
+                </button>
+                 <a class="navbar-brand" href="/">Jainism</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                     <li>
+                                <a href="/">Home</a>
+								
+                            </li>
+			<li>
+                                <a href="/blog">Blog</a>
+                            </li>
+                            <li>
+                                <a href="/about">About</a>
+                            </li>
+                            <li>
+                                <a href="/contact">Contact</a>
+                            </li>
+                            <li>
+                        <a id="loginnavbar" data-toggle="modal" data-target="#login-modal" href="#">Login/Register</a>
+                    </li>
+                    <li>
+                        <a id="logoutnavbar" onclick="logout()" href="">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="intro-header" style="margin-bottom:24px;">
+               <div class="col-md-10-wallet">
+                    <div class="panel panel-default">
+                      <div class="panel-body green">
+                                <h2 >Home</h2>
+                               
+                               
+                         </div>
+                       
+                        </div>
+                   </div>
+               
+            
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-12 col-md-offset-1 pagehead" style="margin:0%" > 
+                        
+             <h1 class="page-header">
+                 About
+                 </h1>
+                        </div>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 aboutpart1">
+			
+                                       &nbsp;  &nbsp;  Jainism is an ancient religion of India. Jains trace their history through twenty-four tirthankara 
+		   and revere Rishabhanatha as the first tirthankara (in the present time-cycle). The last two tirthankara, 
+		   the 23rd tirthankara Parshvanatha (c. 872 – c. 772 BCE) and the 24th tirthankara Mahavira (c. 599 – c. 527 BCE)
+		   are historical figures. There is limited historical evidence for the 22nd tirthankara Neminatha who was the
+		   cousin brother of Krishna. Jainism is a philosophy of eternity and Jains consider their religion to be
+		   eternal. According to Heinrich Zimmer, Jainism can be traced back as far as third or fourth millennium BC,
+		   due to the discovery of a series of great late Stone Age cities in the Indus Valley.
+            </div>
+        </div>
+   
+
+    <!-- Ask to login/register -->
+                <!-- Modal -->
+               <div id="login-modal" class="modal slideInLeft login-form " role="dialog">
+                  <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-footer">
+                        <label data-dismiss="modal">Close</label>
+                      </div>
+                      <div class="modal-body">
+                        <div class="container-fluid">
+                             <div class="row">
+                                 <div class="panel panel-primary">
+                                         <div class=" form-body">
+                                            <div class=" panel-heading"> 
+                                            <ul class="nav nav-tabs final-login">
+                                                <li class="active"><a class="btn btn-sm" data-toggle="tab" href="#sectionA">Existing User</a></li>
+                                                <li><a class="btn btn-sm"  data-toggle="tab" href="#sectionB">New User</a></li>
+                                            </ul>
+                                            </div>
+                                            <div class="panel-body">
+                                            <div class="tab-content">
+                                                <div id="sectionA" class="tab-pane fade in active">
+                                                    <div class="innter-form">
+                                                        <form class="sa-innate-form" method="post">
+                                                             <div class="col-md-12">
+                                                            <label class="col-md-6">Username</label>
+                                                            <input class="col-md-6" type="text" id="username">
+                                                          </div>
+                                                            <div class="col-md-12">
+                                                            <label class="col-md-6">Password</label>
+                                                            <input class="col-md-6" type="password" id="password">
+                                                            </div>
+                                                            <div class="col-md-12"><div class="col-md-4"> </div>
+                                                            <button type="button" class="btn btn-success btn-sm col-md-5" id="login_btn">Sign In</button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <div id="sectionB" class="tab-pane fade">
+                                                    <div class="innter-form">
+                                                        <form class="sa-innate-form" method="post">
+                                                            <div class="col-md-12">
+                                                            <label class="col-md-6">New Username</label>
+                                                            <input  class="col-md-6" type="text" id="new_username"><br>
+                                                            </div>
+                                                            <div class="col-md-12">
+                                                            <label class="col-md-6">New Password</label>
+                                                            <input class="col-md-6" type="password" id="new_password">
+                                                            </div>
+                                                            <div class="col-md-12"><div class="col-md-4"> </div>
+                                                            <button type="button" class="btn btn-primary btn-sm col-md-5" id="register_btn">Register</button>
+                                                             </div>
+                                                        </form>
+                                                    </div>
+                                                    
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                      </div>
+                      
+                    </div>
+
+                  </div>
+                </div>
+                
+
+    <hr>
+</div>
+    <!-- Footer -->
+    <footer>
+               
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                           <div class="pull-right">
+					 
+					
+								<ul class="social-network social-circle"> 
+									<li class=""><a title="Facebook" class="icoFacebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+									<li class=""><a title="Twitter" class="icoTwitter"  target="_blank"><i class="fa fa-twitter"></i></a></li>
+									<li class=""><a title="Google +" class="icoGoogle" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+									<li class=""><a title="Pinterest" class="icoPinterest"  target="_blank"><i class="fa fa-pinterest"></i></a></li>
+									
+								</ul>
+							
+						
+							
+						</div>
+                            <p class="copyright text-muted">This website has been visited <b><span id="counter"></span></b> times since inception.</p>
+                        </div>
+                    </div>
+             
+				
+            </footer>
+             
+  <script src="ui/jquery.min.js"></script>
+            <script src="ui/bootstrap.min.js"></script>
+            <script src="ui/clean-blog.min.js"></script>
+            <script src="ui/main.js"></script>
+            <script src="ui/article.js"></script>
+</body>
+</html>
